@@ -73,35 +73,36 @@
   <p>
     <!-- Associate the label and input -->
     <!-- set: type, name, id, placeholder, autocomplete, required -->
-    <label for="myName" >Name</label>
-    <input id="myName" type="text" placeholder="Please Enter Name" autocomplete="on" required>
+    <label for="userName" >Username</label>
+    <input type="text" name="userName" id="userName" placeholder="Please Enter Name" autocomplete="false" required>
   </p>
   
   <p>
     <!-- Associate the label and input -->
     <!-- set: type, name, id, placeholder, autocomplete, required -->
-    <label for="myName">Email</label>
-    <input id="myEmail" type="text" placeholder="Please Enter Email" autocomplete="on" required>
+    <label for="myEmail">Email</label>
+    <input type="text" name="myEmail" id="myEmail" placeholder="Please Enter Email" autocomplete="on" required>
   </p>
   
   <p>
     <!-- Associate the label and input -->
     <!-- set: type, name, id, placeholder -->
     <label for="myPetCount">Pet Count</label>
-    <input id="myEmail" type="text" placeholder="Please Enter Email">
+    <input type="text" name="myPetCount" id="myPetCount" placeholder="Please Enter Pet Count">
   </p>
   
   <p>
     <!-- Associate the label and input -->
     <!-- set: type, name, id, placeholder -->
-    <label>Birthday</label>
-    <input>
+    <label for="myBirthday">Birthday</label>
+    <input type="date" name="myBirthday" id="myBirthday" placeholder="Please Enter Birthday">
   </p>
   
   <p>
     <!-- Set the name for the select make none the current selection -->
     <label>Prefix</label>
     <select>
+      <option disabled selected value> -- select an option -- </option>
       <option>Mr</option>
       <option>Mrs</option>
       <option>Ms</option>
@@ -117,22 +118,22 @@
     <li>
       <!-- Associate the label and input -->
       <!-- set: type, name, id, value -->
-      <label>
-        <input>
+      <label for="roleAdmin">
+        <input type="radio" name="role" id="roleAdmin" value="1">
         Admin</label>
     </li>
     <li>
       <!-- Associate the label and input -->
       <!-- set: type, name, id, value -->
-      <label>
-        <input>
+      <label for="roleEditor">
+        <input type="radio" name="role" id="roleEditor" value="2">
         Editor</label>
     </li>
     <li>
       <!-- Associate the label and input -->
       <!-- set: type, name, id, value -->
-      <label>
-        <input>
+      <label for=roleContributor>
+        <input type="radio" name="role" id="roleContributor" value="3">
         Contributor</label>
     </li>
   </ul>
@@ -140,37 +141,37 @@
   <p>
     <!-- Associate the label and input -->
     <!-- set: type, name, id, value -->
-    <label>
-      <input>
-      Public Bio</label>
+    <label for="chkPublicBio">
+      <input type="checkbox" name="publicBio" id="publicBio" checked>
+      Make Bio Public</label>
   </p>
   
   <p>
     <!-- Associate the label and input -->
     <!-- set: type, name, id, value -->
-    <label>
-      <input>
+    <label for="color">
+      <input type="text" name="color" id="color">
       Color</label>
   </p>
   
   <p>
     <!-- Set the name for the textarea -->
-    <label>Message</label>
-    <textarea></textarea>
+    <label for="userMessage">Message</label>
+    <textarea id ="userMesage" name="userMessage"></textarea>
   </p>
   
   <p>
     <!-- Associate the label and input -->
     <!-- set: type, name, id -->
     <label>Upload Image</label>
-    <input>
+    <input type="file" name="userImage" accept="image/*">
   </p>
   
   <p>
     <!-- Associate the label and input -->
     <!-- set: type, name, id, value, disabled -->
-    <label>
-      <input>
+    <label for="selfDestruct">
+      <input type="checkBox" name="selfDestruct" id="selfDestruct" value="true" disabled>
       Self Destruct</label>
   </p>
   

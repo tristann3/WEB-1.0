@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
   <head>
     <title>SWAPI Form</title>
   </head>
@@ -15,6 +15,27 @@
       </p>
 
       <p>
+        <label>
+        <input 
+          type="radio"
+          value="fixed_height"
+          name ="size">
+          1
+      </label>
+      <label>
+        <input 
+          type="radio"
+          value="fixed_height_small"
+          name ="size">
+          2
+      </label>
+      <label>
+        <input 
+          type="radio"
+          value="fixed_height_small_still"
+          name ="size">
+          3
+      </label>
         <!-- Make three input tags -->
         <!-- These will be radio buttons add a type attribute with value "radio" -->
         <!-- To work as group all radio buttons hsould have the same name -->
@@ -31,17 +52,23 @@
       </p>
 
       <p>
+        Cats Only
+        <input type="checkbox" id="cats-only">
         <!-- Create an input inside a label. -->
         <!-- This will be a checkbox. Use type = cheackbox -->
         <!-- Checkbox id='cats-only'-->
       </p>
 
       <p>
+        Show Title
+        <input type="checkbox" id="show_title">
         <!-- Make an other check box -->
         <!-- Use id='show-title'-->
       </p>
 
       <p>
+        Image Count
+        <input type="checkbox" id="image-count">
         <!-- Make a range slider. This is inptu with type = range -->
         <!-- range id="image-count"-->
       </p>

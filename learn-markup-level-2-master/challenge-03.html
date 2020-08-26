@@ -10,32 +10,12 @@
         <label>
           Search
           <!-- Create an input with type with value "text" -->
+          <input type="text">
           
         </label>
       </p>
 
       <p>
-        <label>
-        <input 
-          type="radio"
-          value="fixed_height"
-          name ="size">
-          1
-      </label>
-      <label>
-        <input 
-          type="radio"
-          value="fixed_height_small"
-          name ="size">
-          2
-      </label>
-      <label>
-        <input 
-          type="radio"
-          value="fixed_height_small_still"
-          name ="size">
-          3
-      </label>
         <!-- Make three input tags -->
         <!-- These will be radio buttons add a type attribute with value "radio" -->
         <!-- To work as group all radio buttons hsould have the same name -->
@@ -46,17 +26,36 @@
         <!-- Wrap each radio button in a label and include the label text -->
         <!-- Here is the first input you make the others -->
         <label>
-          <input type="radio" name="size" value="fixed_height">
+          <input 
+          type="radio" 
+          value="fixed_height"
+          name="size" >
           Fixed Height
+        </label>
+        <label>
+          <input 
+            type="radio"
+            value="fixed_height_small"
+            name ="size">
+            Fixed Height Small
+        </label>
+        <label>
+          <input 
+            type="radio"
+            value="fixed_height_small_still"
+            name ="size">
+            Fixed Height Small Still
         </label>
       </p>
 
       <p>
+        <label>
         Cats Only
         <input type="checkbox" id="cats-only">
         <!-- Create an input inside a label. -->
         <!-- This will be a checkbox. Use type = cheackbox -->
         <!-- Checkbox id='cats-only'-->
+        </label>
       </p>
 
       <p>

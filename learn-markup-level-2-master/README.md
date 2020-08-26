@@ -1,4 +1,4 @@
-# FEW 1.1 Lesson 2 challenges 
+# WEB 1.0 Lesson 2 challenges 
 
 ## Challenge 2 - Images
 

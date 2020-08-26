@@ -1,29 +1,46 @@
-<!-- 
-
-  What to do? 
-
-  
- -->
-
 <!DOCTYPE html>
-<html>
+<html lang=en>
   <head>
     <title>Android - Exmaple</title>
   </head>
   <body>
+    <!-- 
+    
+      You're job is fill this document by adding 
+      missing attributes to tags and adding a few 
+      new tags. 
+      
+      Look through the code below and read the comments.
+      These comments will instruct you on what needs 
+      to be done. 
+      
+     -->
     <section>
       <header>
         <h1>Android</h1>
         <nav>
           <ul>
-            <li><a href="#">What is Android</a></li>
-            <li><a href="#">Android 10</a></li>
-            <li><a href="#">Phones &amp; Tablets</a></li>
+            <!-- For each of the anchor tags below
+              add a id of the section it should link to.
+              Make sure to begin the name with # 
+          
+              Do this AFTER you add the id names below! 
+            -->
+            <li><a href="#phones-tablets">Phones &amp; Tablets</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#latest-greatest">Latest Greatest</a></li>
+            <li><a href="android-one">Android One</a></li>
+            <li><a href="popular-picks">Popular Picks</a></li>
+            <li><a href="featured-tablets">Featured Tablets</a></li>
+            <li><a href="android-for-business">Androind for Business</a></li>
+            <li><a href="">Android Go (Edition)</a></li>
           </ul>
         </nav>
       </header>
     
-      <section>
+      <!-- Phones & Tablets -->
+      <!-- Assign an id name here! id="phones-and-tablets" -->
+      <section id="phones-and-tablets">
         <header>
           <h2>Phones &amp; Tablets</h2>
           <p>
@@ -34,7 +51,9 @@
         </header>
       </section>
     
-      <section>
+      <!-- Featured -->
+      <!-- Assign an id name here: id="featured" -->
+      <section id="featured">
         <header>
           <h2>FEATURED</h2>
           <h3>Google Pixel 3a</h3>
@@ -49,7 +68,10 @@
         </footer>
       </section>
     
-      <section>
+
+      <!-- Latest Greatest -->
+      <!-- Assign an id name to this section: latest-greatest -->
+      <section id="latest-greatest">
         <header>
           <h2>LATEST AND GREATEST</h2>
           <h3>
@@ -61,10 +83,13 @@
         
         <p>Download a 4K movie in the blink of an eye. Jump on a group video call that never lags. Turn your living room into an AR zombie apocalypse. 5G is taking phones to the next level &mdash; and they&rsquo;re only built on Android.</p>
         
+        <!-- In this section you'll add an <img> tag 
+        for each phone. You'll to include the src, width, height, and alt.
+        The For alt add a description of the image. -->
         <ul>
           <li>
             <!-- Needs an image width 165 samsung-galaxy-10-5g.png -->
-            <img src="images/samsung-galaxy-10-5g.png" width = " 165" height = "auto" alt ="Samsung Galaxy">
+            <img src="images/samsung-galaxy-10-5g.png" width = "165" alt ="Samsung Galaxy">
             <h4>Samsung</h4>
             <span>Galaxy 10 5G</span>
           </li>
@@ -78,6 +103,7 @@
           <li>
             <!-- Needs an image width 165 xiaomi-mi-mix-3-5g.png -->
             <img src="images/xiaomi-mi-mix-3-5g.png" width = "165" height="auto" alt="Xiaomi-mi-mix-3">
+            
             <h4>Xiaomi</h4>
             <span>Mi Mix 3 5G</span>
           </li>
@@ -90,7 +116,9 @@
         </ul>
       </section>
     
-      <section>
+      <!-- Android One -->
+      <!-- Assign an id name: android-one -->
+      <section id="android-one">
         <header>
           <h2>ANDROID ONE</h2>
         </header>
@@ -106,7 +134,9 @@
         </footer>
       </section>
     
-      <section>
+      <!-- Popular Picks -->
+      <!-- add an id: popular-picks -->
+      <section id="popular-picks">
         <header>
           <h2>POPULAR PICKS</h2>
           <h3>Cameras that catch any shot.</h3>
@@ -116,7 +146,7 @@
   
         <ul>
           <li>
-            <!-- Needs an image width 165 google-pixel-3a.png -->
+            <!-- Needs an image (<img width="" height="" ...>) width 165 google-pixel-3a.png -->
             <img src="images/google-pixel-3a.png" width = "165" height = "auto" alt = "Google Pixel 3">
             <h4>Google</h4>
             <span>Pixel 3a</span>
@@ -142,8 +172,9 @@
         </ul>
       </section>
     
-  
-      <section>
+      <!-- Featured Tablets -->
+      <!-- assign an id name here: featured-tablets -->
+      <section id="featured-tablets">
         <header>
           <h2>FEATURED TABLETS</h2>
           <h3>Sometimes you need a bigger screen.</h3>
@@ -153,7 +184,7 @@
         
         <ul>
           <li>
-            <!-- Needs an image width 318 samsung-galaxy-tab-s4.png -->
+            <!-- Needs an image (<img>) width 318 samsung-galaxy-tab-s4.png -->
             <img src="images/samsung-galaxy-tab-s4.png" width = "318" height="auto" alt="Samsung Galaxy Tab S4">
             <h4>Samsung</h4>
             <span>Galaxy Tab S4</span>
@@ -166,14 +197,16 @@
           </li>
           <li>
             <!-- Needs an image width 318 lenovo-tab-p10-plus.png -->
-            <img src="images/lenovo-tab-p10-plus.png" width = "318" height="auto" alt="Lenovo Tab P10 Plus"> 
+            <img src="images/lenovo-tab-p10-plus.png" width = "318" height="auto" alt="Lenovo Tab P10 Plus">
             <h4>Lenovo</h4>
             <span>Tab P10 Plus</span>
           </li>
         </ul>
       </section>
     
-      <section>
+      <!-- Android For Business -->
+      <!-- assign an id id: android-for-business -->
+      <section id="android-for-business">
         <header>
           <h2>ANDROID FOR BUSINESS</h2>
         </header>
@@ -187,23 +220,10 @@
           </p>
         </footer>
       </section>
-    
-      <section>
-        <header>
-          <h2>ANDROID ONE</h2>
-        </header>
   
-        <p>Secure, up-to-date, and easy to use.</p>
-        <p>Android One phones are certified to run the simplest, latest version of Android. Regular security updates every month. At least two years of OS upgrades.2 And only loaded with the most essential apps.</p>
-    
-        <footer>
-          <p>
-            <button>Learn more</button>
-          </p>
-        </footer>
-      </section>
-  
-      <section>
+      <!-- Android Go -->
+      <!-- Add an id -->
+      <section id="android-go">
         <header>
           <h2>ANDROID (GO EDITION)</h2>
           <h3>Less RAM. <br>
@@ -240,6 +260,18 @@
           </li>
         </ul>
       </section>
-    </section>    
+    </section>  
+      <!-- 
+
+        After completing all of the challenges in the comments above 
+        check your work. 
+
+        1. Find another student to code review with. 
+        1. Use the validator to check your code: https://validator.w3.org 
+        1. test the functionality of your page. It should do the following things: 
+          - All of the images should show up
+          - Clicking on of the links at the top should scroll the page to that section. 
+
+       -->
   </body>
 </html>

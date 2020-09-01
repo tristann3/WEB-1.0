@@ -1,10 +1,12 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"name": "CSS-Challenges-master",
+			"path": "../../../Downloads/CSS-Challenges-master"
 		},
 		{
-			"path": "../../../Downloads/CSS-Challenges-master"
+			"name": "WEB-1.0",
+			"path": "."
 		}
 	],
 	"settings": {

@@ -9,9 +9,16 @@
 
     /* Style the list use the selector: ul { ... your styles here... } */
     /* Remove the bullet list-style none */
-      
+    ul{
+      list-style:none;
+    }
 
     /* Style the blockquote: blockquote { ... } */
+    blockquote{
+      font-size:2em;
+      font-family:Georgia;
+      line-height:1.5;
+    }
     /* make the font large 2em */
     /* Set the font to a serif use Gerogia */
     /* Needs some line height 1.5 */
@@ -21,9 +28,9 @@
     /* Even numbered list items */
     li:nth-child(even) {
       /* Set the color #775 */
-      
+      color: #775;
       /* Align the text to the right */
-      
+      text-align:right;
     }
 
     /* These style will use some advanced selectors. */
@@ -31,17 +38,17 @@
     /* odd numbered list items */
     li:nth-child(odd) {
       /* Set the color #757 */
-      
+      color: #757;
       /* Align the text to the left */
-      
+      text-align:left;
     }
   
     /* Style the first letter */
     blockquote::first-letter {
       /* Set the color #000 */
-      
+      color: #000;
       /* Try changing the font size */
-
+      font-size: 2.5em;
     }
   
     /* Here you need to style the authors name. */
@@ -54,10 +61,11 @@
     /* Style the author */
     blockquote footer {
       /* Make the font smaller 0.5em */
-      
+      font-size:0.5em;
       /* Make the font weight bold */
-      
+      font-weight:bold;
       /* Change the color #666 */
+      color:#666;
       
     }
 
@@ -66,7 +74,7 @@
     /* main > footer */
     main > footer {
       /* text align center */
-      
+      text-align:center;
     }
 
     /* Stretch Challenges

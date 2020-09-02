@@ -26,9 +26,9 @@
     /* Here are some new selectors */
 
     /* Even numbered list items */
-    li:nth-child(even) {
+    li:nth-child(odd) {
       /* Set the color #775 */
-      color: #775;
+      color: rgba(170, 102, 25, 0.945);
       /* Align the text to the right */
       text-align:right;
     }
@@ -36,9 +36,9 @@
     /* These style will use some advanced selectors. */
     /* You in this case you need to select only the */
     /* odd numbered list items */
-    li:nth-child(odd) {
+    li:nth-child(even) {
       /* Set the color #757 */
-      color: #757;
+      color: rgba(170, 102, 25, 0.945);
       /* Align the text to the left */
       text-align:left;
     }
@@ -49,6 +49,7 @@
       color: #000;
       /* Try changing the font size */
       font-size: 2.5em;
+      font-family:cursive;
     }
   
     /* Here you need to style the authors name. */
@@ -60,10 +61,11 @@
     
     /* Style the author */
     blockquote footer {
+      line-height:.5em;
       /* Make the font smaller 0.5em */
-      font-size:0.5em;
+      font-size:.7em;
       /* Make the font weight bold */
-      font-weight:bold;
+      font-weight:lighter;
       /* Change the color #666 */
       color:#666;
       

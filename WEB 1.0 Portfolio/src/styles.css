@@ -1,3 +1,7 @@
+body {
+    margin:0;
+}
+
 header{
     background-color:rgb(120, 165, 201)
 }
@@ -7,10 +11,24 @@ ul {
     padding: 0;
 }
 li {
-    display: inline;
 }
-a {
-    font-family: Helvetica;
+.container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.nav-links-container {
+    display: flex;
+}
+.nav-icons-container {
+    display:flex;
+}
+.container a {
+    font-family: "Raleway";
+    -webkit-font-smoothing: antialiased;
+    font-weight:lighter;
+    text-decoration:none;
     text-align: center;
-    padding-bottom: 50px;
+    
+    padding:15px;
 }

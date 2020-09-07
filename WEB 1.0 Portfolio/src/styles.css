@@ -1,37 +1,24 @@
-body {
-    margin:0;
-    font-family: "Raleway";
-    font-size: 18px;
-    line-height: 1.5;
-    color: #000;
-}
+/* Portfoio Style Sheet
+
+
+To do:
+
+
+Tristan Thompson
+Last Edit: 9-6-2020 by Tristan Thompson
+*/
+
+
+/* Nav Styles */
 .nav-bar{
     background: #6f95c4;
-
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li > a:hover {
-    color:rgb(4, 49, 133);
-    font-weight: bold;
-}
-.nav-bar {
+    position:fixed;
+    top: 0;
+    width:100%;
     display: flex;
     justify-content:space-around;
     align-items: center;
-}
-.nav-links-container {
-    display: flex;
-}
-.nav-icons-container {
-    display:flex;
-}
-img {
-    padding-top: 10px;
+
 }
 .nav-bar a {
     color:rgb(126, 30, 30);
@@ -41,4 +28,45 @@ img {
     text-decoration:none;
     text-align: center;
     padding:15px;
+}
+.nav-links-container {
+    display: flex;
+}
+.nav-icons-container {
+    display:flex;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li > a:hover {
+    color:rgb(4, 49, 133);
+    font-weight: bold;
+}
+img {
+    padding-top: 10px;
+}
+
+body {
+    margin:0;
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}
+h1 {
+    padding-top:40px;
+    font-size: 2em;
+    margin:20px;
+}
+footer {
+    margin-left:40px;
+}
+.div-about-me-container {
+    display:flex;
+}
+.bio-skills-container {
+    display: flex;
+    flex-direction:column;
 }

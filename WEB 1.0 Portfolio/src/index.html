@@ -11,11 +11,11 @@ Last Edit: 9-8-2020
 	</head>
 	<body>
         <header>
-            <nav class="nav-bar">
+            <nav class="nav-bar" id="about-container">
                 <ul class="nav-links-container">
                     <li><a id="nav1" href="#">Home</a></li>
                     <li><a id="nav2" href="#">About</a></li>
-                    <li><a id="nav3" href="#">Portfolio</a></li>
+                    <li><a id="nav3" href="#footer-container">Portfolio</a></li>
                 </ul>
                 <ul class="nav-icons-container">
                     <li><a id="nav4" href="https://www.linkedin.com/in/tristan-t-70b85b13b/" target="_blank"><img src = "img/linkedin-logo.png" height="42" width="42" alt="LinkedIn link"></a></li>
@@ -24,15 +24,13 @@ Last Edit: 9-8-2020
             </nav>
         </header>
         <main>
-            <h1>Tristan Thompson</h1>
-            <footer>- Junior Software Engineer</footer>
+            
             <article class="about-container">
-                <section class="about-container"><!-- Introductiion -->
+                <section class="intro-container"><!-- Introductiion -->
                     <div class="profile-container">
-                        <figure>
-                            <img src="img/profile.jpeg" alt="Profile Picture">
-                            <figcaption>Fig.1 - Profile, Tristan Thompson</figcaption>
-                        </figure>
+                        <img src="img/headshot.jpeg" alt="Profile Picture">                            
+                        <h1>Tristan Thompson</h1>
+                        <p>- Junior Software Engineer</p>
                     </div>
                     <div class="skills-bio-container">
                         <nav class="nav-bio-container">
@@ -55,9 +53,12 @@ Last Edit: 9-8-2020
                     </div>  
                 </section>
             </article>
-            <article class="portfolio-conatainer">
-                
+            <article class="portfolio-container">
+                <h2>Projects</h2>
             </article>
         </main>
+        <footer class="footer-container" id="footer-container">
+            <footer>Copyright @2020 All Rights Reserved | Tristan Thompson</footer>
+        </footer>
 	</body>
 </html>

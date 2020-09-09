@@ -2,10 +2,13 @@
 
 
 To do:
+Skills Progress Bar
+Landing Page
+Portfolio Section
 
 
 Tristan Thompson
-Last Edit: 9-6-2020 by Tristan Thompson
+Last Edit: 9-7-2020 by Tristan Thompson
 */
 
 
@@ -18,6 +21,7 @@ Last Edit: 9-6-2020 by Tristan Thompson
     display: flex;
     justify-content:space-around;
     align-items: center;
+    
 
 }
 .nav-bar a {
@@ -34,39 +38,44 @@ Last Edit: 9-6-2020 by Tristan Thompson
 }
 .nav-icons-container {
     display:flex;
+    align-self: flex-end;
+}
+li > a:hover {
+    color:rgb(4, 49, 133);
+    font-weight: bold;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li > a:hover {
-    color:rgb(4, 49, 133);
-    font-weight: bold;
-}
+
 img {
     padding-top: 10px;
 }
-
+/* Body Styles */
 body {
     margin:0;
-    font-family: "Raleway";
+    font-family: Helvetica;
     font-size: 18px;
     line-height: 1.5;
     color: #000;
 }
 h1 {
-    padding-top:40px;
+    font-weight: lighter;
+    padding: 40px 0px 0px 0px;
     font-size: 2em;
     margin:20px;
+    margin-bottom:0px
 }
 footer {
-    margin-left:40px;
+    font-weight: lighter;
+    padding-left:40px;
 }
-.div-about-me-container {
+.about-container {
     display:flex;
 }
-.bio-skills-container {
-    display: flex;
-    flex-direction:column;
+.nav-skills-container {
+    align-content:center;
 }
+

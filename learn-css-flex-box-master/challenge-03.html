@@ -9,43 +9,44 @@
     body {
       /* Set a base font style */
       /* font family Helvetica */
-      
+      font-family:Helvetica;
       /* font weight 100 */
-      
+      font-weight:100;
       /* font size 18px */
-      
+      font-size:18px;
       /* line-height 1.5 */
-      
+      line-height:1.5;
       /* color #666 */
-      
+      color:#666;
       /* display flex */
-      
+      display:flex;
       /* justify content center */
-      
+      justify-content:center;
       /* align-items: center; */
-
+      align-items:center;
     }
 
     /* Use flex to arrange everything in a column */
     form {
       /* use flex to display everything in the form in a column */
-      
+      display:flex;
+      flex-direction:column;
       /* padding 2em */
-      
+      padding:2em;
       /* Make the form fill the space but not larger than 600px */
       /* width: 100% */
-      
+      width:100%;
       /* max-width 600px */
-      
+      max-width:600px;
     }
 
     /* Some general styles */
     input,
     textarea {
       /* font size 1em */
-      
+      font-size:1em;
       /* padding 0.75em */
-      
+      padding:0.75em;
     }
 
     /* File upload styles */
@@ -59,12 +60,14 @@
     label[for=input-file] {
       /* Make this label look like a button */
       /* border style solid, border width 1px */
-      
+      border-style:solid;
+      border-width:1px;
       /* padding 1em */
-      
+      padding:1em;
       /* border radius 0.25em */
-     
+     border-radius:0.25em;
       /* text align center */
+      text-align:center;
       
     }
 
@@ -72,27 +75,30 @@
       /* This changes how the box model is calculated */
       /* box-sizing: border-box; */
       /* width 100% fill the horizontal space */
-      
+      box-sizing: border-box;
+      width: 100%;
       /* height of 6em */
-      
+      height: 6em;
     }
 
     /* Use flex to arrange each of the labels in a column */
     /* This covers the first 4 inputs */
     label {
       /* display flex direction column */
-      
+      display:flex;
+      flex-direction:column;
     }
 
     /* The radio buttons and checkboxes need to arranged in a row */
     label.h {
+      display:flex;
       /* flex direction rol */
-      
+      flex-direction:row;
       /* align items center */
-      
+      align-items:center;
       /* Add some margin to make some space */
       /* margin left 0.25em, margin top 0, margin right 0.25em margin left 0 */
-      
+      margin: 0.25em 0 0.25em 0;
     }
 
     /* Style input type text, email, password, datetime, number */
@@ -102,49 +108,52 @@
     input[type=date],
     input[type=number] {
       /* border solid 1px #666 */
-      
+      border: 1px solid #666;
       /* margin top and bottom 1em left and right 0 */
-      
+      margin: 1em 0;
+
       /* border radius 0.25em */
-      
+      border-radius: 0.25em;;
+
     }
 
     /* Style the inputs type radio, checkbox, file */
     input[type=radio],
     input[type=checkbox],
     input[type=file] {
-
+      background-color:orange;
     }
 
     input > span {
       /* margin left 1em 0 everywhere else */
-
+      margin: 0 0 0 1em;
     }
 
     button[type=submit] {
       /* padding 1em all sides */
-      
+      padding:1em;
       /* color orange */
-      
+      color:orange;
       /* border none */
-      
+      border:none;
       /* border radius 0.25em */
-      
+      border-radius:0.25em;
       /* margin 1em bottom, 0 on the other 3 sides */
-      
+      margin: 0 0 1em 0;
       /* width 100px */
-      
+      width:100px;
       /* Move this to right with flex */
       /* align-self: flex-end; */
     }
 
     form > section {
       /* margin on the top and bottom 1em, margin 0 left and right */
-
+      margin:1em 0 1em 0;
     }
 
     form > section:last-child {
       /* align-self: flex-end; */
+      align-self:flex-end;
     }
   </style>
 </head>

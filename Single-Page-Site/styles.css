@@ -15,12 +15,38 @@ main > section {
     min-height: 100vh;
 }
 
-/* Give each section a different background color. 
-The id names are unique so styles here apply just 
-the section they name. */
-#nav {
-    background-color: #FF3B30;
+#nav-bar {
+    justify-content:space-between;
+    align-items: baseline;
+    padding:1em;
+    background-color:rgb(29, 56, 125);
+    display:flex;
 }
+nav, h1, ul {
+    margin:0;
+}
+nav a {
+    text-decoration:none;
+}
+
+nav ul {
+    display:flex;
+    list-style-type:none;
+}
+
+nav ul a {
+    padding: 1em;
+
+    color:white;
+    text-transform:uppercase;
+    font-weight:600;
+    text-shadow: rgba(0, 0, 0, 0.65) 0 0 4px;
+}
+
+nav ul a:hover {
+    color:red;
+}
+
 
 #banner {
     background-color: #26B63E;

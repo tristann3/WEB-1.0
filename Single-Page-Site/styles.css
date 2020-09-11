@@ -1,0 +1,56 @@
+/* These styles get started */
+
+body {
+    font-family:Helvetica;
+    font-weight: lighter;
+    font-size:1em;
+    margin: 0;
+}
+
+nav, main > section {
+    overflow: auto;
+}
+
+main > section {
+    min-height: 100vh;
+}
+
+/* Give each section a different background color. 
+The id names are unique so styles here apply just 
+the section they name. */
+#nav {
+    background-color: #FF3B30;
+}
+
+#banner {
+    background-color: #26B63E;
+}
+
+#uncharted-info {
+    background-color: #007AFF;
+}
+
+#art-gallery {
+    background-color: #5856D6;
+}
+
+#naughty-dog {
+    background-color: #FF00BE;
+}
+
+#contact {
+    background-color: #FF9500;
+}
+
+.parallax {
+    /* image used */
+    background-image:url("img/uncharted-parallax.jpg");
+    /* set a specific height */
+    height:500px;
+
+    /* Create the scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}

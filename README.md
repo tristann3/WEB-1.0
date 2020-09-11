@@ -7,7 +7,7 @@ This is a course repo for WEB 1.0
 * [CSS Challenges](https://github.com/tristann3/WEB-1.0/tree/master/CSS-Challenges)
 * [CSS Challenges 2](https://github.com/tristann3/WEB-1.0/tree/master/CSS-Challenges-2)
 * [Learn CSS Flexbox](https://github.com/tristann3/WEB-1.0/tree/master/learn-css-flex-box-master)
-* [Single Page Site](https://github.com/tristann3/WEB-1.0/tree/master/learn-markup-level-2-master)
+* [Single Page Site](https://github.com/tristann3/WEB-1.0/tree/master/Single-Page-Site)
 
 
 ## Schedule

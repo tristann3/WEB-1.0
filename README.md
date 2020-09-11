@@ -4,6 +4,12 @@ This is a course repo for WEB 1.0
 * [Portfolio (in progress)](https://github.com/tristann3/WEB-1.0/tree/master/WEB%201.0%20Portfolio)
 * [Learn Semantic Markup](https://github.com/tristann3/WEB-1.0/tree/master/learn-semantic-markup-master)
 * [Learn Semantic Markup 2](https://github.com/tristann3/WEB-1.0/tree/master/learn-markup-level-2-master)
+* [CSS Challenges](https://github.com/tristann3/WEB-1.0/tree/master/CSS-Challenges)
+* [CSS Challenges 2](https://github.com/tristann3/WEB-1.0/tree/master/CSS-Challenges-2)
+* [Learn CSS Flexbox](https://github.com/tristann3/WEB-1.0/tree/master/learn-css-flex-box-master)
+* [Single Page Site](https://github.com/tristann3/WEB-1.0/tree/master/learn-markup-level-2-master)
+
+
 ## Schedule
 
 **Course Dates:** Thursday, August 20 – Tuesday, October 6, 2020 (7 weeks)

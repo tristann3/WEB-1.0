@@ -1,4 +1,3 @@
-/* These styles get started */
 
 body {
     font-family:Helvetica;
@@ -15,11 +14,12 @@ main > section {
     min-height: 100vh;
 }
 
+/* Nav Styles */
 #nav-bar {
     justify-content:space-between;
     align-items: baseline;
     padding:1em;
-    background-color:rgb(29, 56, 125);
+    background-color:rgba(0, 0, 0, 0.5);
     display:flex;
 }
 nav, h1, ul {
@@ -47,9 +47,17 @@ nav ul a:hover {
     color:red;
 }
 
-
+/* Section Styles */
 #banner {
     background-color: #26B63E;
+    background-image: url(img/banner-img.jpg);
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#banner img {
+    justify-content:center;
 }
 
 #uncharted-info {

@@ -82,7 +82,6 @@ nav ul a:hover {
     height:910px;
     background-color: black;
     color:white;
-    margin: 0 400px 0 100px;
     display:flex;
 }
 #uncharted-info img {
@@ -94,15 +93,11 @@ nav ul a:hover {
     justify-content:space-between;
     margin-bottom:75px;
 }
-#top-center {
+#text-based h2 {
+    align-self:center;
+    padding-right:450px;
 }
-#mid-right {
-    display:flex;
-align-items:flex-end;
-}
-#bottom-left {
 
-}
 #art-gallery {
     background-color: #5856D6;
 }
@@ -125,6 +120,15 @@ align-items:flex-end;
     font-size:3em;
     text-align:center;
     color:#eee;
+}
+#text-based > * {
+    font-size:2em; 
+}
+#mid-right {
+    margin: 0 50px 0 500px;
+}
+#bottom-left {
+    margin-right:500px;
 }
 .card {
     width:400px;

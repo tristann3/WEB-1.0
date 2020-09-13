@@ -4,6 +4,7 @@ body {
     font-weight: lighter;
     font-size:1em;
     margin: 0;
+    background-color:black;
 }
 
 nav, main > section {
@@ -13,7 +14,20 @@ nav, main > section {
 main > section {
     min-height: 100vh;
 }
-
+/* Parallax */
+.parallax {
+    /* The image used */
+    background-image: url("uncharted-logo-banner.jpg");
+  
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* Nav Styles */
 #nav-bar {
     justify-content:space-between;
@@ -21,6 +35,8 @@ main > section {
     padding:1em;
     background-color:rgba(0, 0, 0, 0.5);
     display:flex;
+    top:0;
+    position:sticky;
 }
 nav, h1, ul {
     margin:0;
@@ -55,15 +71,38 @@ nav ul a:hover {
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-top:-60px;
 }
 #banner img {
+    
     justify-content:center;
 }
 
 #uncharted-info {
-    background-color: #007AFF;
+    height:910px;
+    background-color: black;
+    color:white;
+    margin: 0 400px 0 100px;
+    display:flex;
 }
+#uncharted-info img {
+    margin:0;
+}
+#text-based{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin-bottom:75px;
+}
+#top-center {
+}
+#mid-right {
+    display:flex;
+align-items:flex-end;
+}
+#bottom-left {
 
+}
 #art-gallery {
     background-color: #5856D6;
 }
@@ -82,6 +121,7 @@ nav ul a:hover {
 
 #naughty-dog > h2 {
     margin:1em;
+    margin-top: 3em;
     font-size:3em;
     text-align:center;
     color:#eee;

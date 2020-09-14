@@ -9,8 +9,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Naughty Dog's Uncharted</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="index.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 	</head>
 	<body>
 
@@ -40,7 +44,21 @@
                 </section>
                 
                 <section id="art-gallery">
-                    <h2>Art Gallery</h2>
+                    <section id="ND-banner" class="parallax">
+                        <p>art gallery</p>
+                    </section>
+
+                    <img class="uncharted-slideshow" src = img/gallery/art1.jpg width=100%>
+                    <img class="uncharted-slideshow" src = img/gallery/art2.jpg width=100%>
+                    <img class="uncharted-slideshow" src = img/gallery/art3.jpg width=100%>
+                    <img class="uncharted-slideshow" src = img/gallery/art4.jpg width=100%>
+                    <img class="uncharted-slideshow" src = img/gallery/art5.jpg width=100%>
+                    <img class="uncharted-slideshow" src = img/gallery/art6.jpg width=100%>
+
+                    <script>
+                        w3.slideshow(".uncharted-slideshow", 1500);
+                    </script>
+                    
 
                 </section>
 
@@ -56,7 +74,7 @@
                             <img src="img/crash-bandicoot.jpeg">
                             <h3>Crash Bandicoot</h3>
                             <h4>1996 - 2001</h4>
-                            <p>Crash Bandicoot About --Do more research--</p>
+                            <p>Crash Bandicoot was produced by Naughty Dog for only 5 years before selling it to Sony, where all went downhill from there. But before they sold it they made this platformer which players control the protagonist Crash who traverses several levels in order to progress.</p>
                         </li>
                         <li class="card">
                             <img src="img/jak-and-daxter.jpg">
@@ -64,7 +82,7 @@
                             <h4>2001 - 2004</h4>
                             <p>This was a revolutionary platformer in the early 2000s. From the first game's guided open world story, to the last games graphical improvements, This game series is considered a classic for the Playstation 2.</p>
                         </li>
-                        <li class="card">
+                        <li class="card" >
                             <img src="img/the-last-of-us.jpg">
                             <h3>Last of Us</h3>
                             <h4>2013 - 2020</h4>
@@ -74,21 +92,16 @@
                 </section>
 
             <footer id="contact">
+                <h2>Contact Me</h2>
 				<form>
-					<label>
-						Name
-						<input type="text">
-					</label>
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name" />
 
-					<label>
-						Email
-						<input type="email">
-					</label>
-					
-					<label>
-						Message
-						<textarea></textarea>
-					</label>
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" id="Email" />
+
+                    <label for="Message">Message:</label>
+                    <textarea></textarea>
 
 					<button type="submit">Send</button>
 				</form>

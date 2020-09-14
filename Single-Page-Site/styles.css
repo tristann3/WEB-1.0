@@ -3,7 +3,7 @@ body {
     font-weight: lighter;
     font-size:1em;
     margin: 0;
-    background-color:black;
+    background-color:darkgrey;
 }
 
 nav, main > section {
@@ -34,6 +34,7 @@ nav a {
 nav ul {
     display:flex;
     list-style-type:none;
+    padding:0;
 }
 
 nav ul a {
@@ -114,9 +115,14 @@ nav ul a:hover {
 
 /* Art Gallery Section */
 #art-gallery {
-    background-color: #5856D6;
+    background-color: black;
 }
-
+#ND-banner p {
+    text-transform: uppercase;
+    font-size:3em;
+    color:white;
+    font-weight:bold;
+}
 
 /* Naughty Dog Banner with Parallax */
 #ND-banner {
@@ -153,12 +159,12 @@ nav ul a:hover {
 
 
 .card {
-    height:600px;
+    height:650px;
     width:400px;
     margin:1em;
     background-color: grey;
 }
-.card *{
+.card * {
     margin:1em;
 
 }
@@ -176,7 +182,67 @@ nav ul a:hover {
     margin: 1rem;
 }
 
-/* Contact Section */
+footer {
+    margin:0;
+}
+
 #contact {
-    background-color: #FF9500;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:35vh;
+}
+
+#contact form {
+    display: flex;
+    flex-direction:column;
+    justify-items:center;
+    align-items:center;
+    
+}
+#contact h2 {
+    padding-top: 1em;
+}
+
+#contact label {
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items:center;
+    padding-bottom:5px;
+}
+
+label {
+    margin: 1em 0;
+    align-self:center;
+}
+
+label span {
+    margin: 1em 0;
+}
+
+input, textarea {
+    border: 1px solid #000;
+    padding: 0.5em;
+    margin: 0;
+    width: 20em;
+    font-size: 1em;
+}
+
+textarea {
+    height: 9em;
+}
+
+form button {
+    width: auto;
+    font-size: 1em;
+    margin: 1em 0;
+    align-self: flex-end;
+    padding: 0.5em 1em;
+    background-color:rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    align-self:center;
 }

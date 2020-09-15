@@ -96,19 +96,16 @@ nav ul a:hover {
     justify-content:space-between;
     margin-bottom:75px;
 }
-#text-based h2 {
-    align-self:center;
-    padding-right:450px;
-}
+
 #text-based > * {
-    font-size:1.5em; 
+    font-size:1.2em; 
     font-weight:lighter;
 }
 #mid-right {
-    margin: 300px 100px 100px 500px;
+    margin: 300px 50px 100px 300px;
 }
 #bottom-left {
-    margin: 0 500px 300px 200px;
+    margin: 100px 300px 100px 100px;
 
 }
 

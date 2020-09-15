@@ -12,8 +12,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Naughty Dog's Uncharted</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="index.js"></script>
         <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
 
 	</head>
 	<body>
@@ -30,16 +31,16 @@
 
                 </ul>
             </nav>
-                <section id="banner" class="parallax">
-                    <img src="img/uncharted-logo-banner.png" height=75 width=492>
+                <section id="banner" class="parallax" >
+                    <img src="img/uncharted-logo-banner.png" height=75 width=492 data-aos="fade-in">
                 </section>
                 
                 
                 <section id="uncharted-info">
-                    <img src="img/nathan-drake-hanging.png" >
+                    <img src="img/nathan-drake-hanging.png" data-aos="fade-right">
                     <div id="text-based">
-                        <p id="mid-right">Uncharted is an action-adventure game series developed by Naughty Dog and published by Sony Interactive Entertainment for PlayStation consoles. The main series of games follows Nathan Drake, a treasure hunter who travels across the world to uncover various historical mysteries.</p>
-                        <p id="bottom-left">This game raised the standards of single-player video games, praising it for quality storytelling, gameplay mechanics, character design, realistic graphics, and delivering an enjoyable cinematic experience.</p>
+                        <p data-aos="fade-right" id="mid-right">Uncharted is an action-adventure game series developed by Naughty Dog and published by Sony Interactive Entertainment for PlayStation consoles. The main series of games follows Nathan Drake, a treasure hunter who travels across the world to uncover various historical mysteries.</p>
+                        <p data-aos="fade-left" id="bottom-left">This game raised the standards of single-player video games, praising it for quality storytelling, gameplay mechanics, character design, realistic graphics, and delivering an enjoyable cinematic experience.</p>
                     </div>
                 </section>
                 
@@ -65,7 +66,7 @@
 
                 <section id="naughty-dog">
                     <section id="ND-banner" class="parallax">
-                        <img src="img/naughty-dog-logo.png" height=1000 width=1500>
+                        <img src="img/naughty-dog-logo.png" height=1000 width=1500 data-aos="fade-in">
                     </section>
                     
                     <p>Naughty Dog is the developers behind some of the most iconic games in the evolution of Playstation</p>
@@ -107,6 +108,12 @@
 				</form>
 			</footer>
 		</main>
-		
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            // Initialize Animate On Scroll
+            AOS.init();
+        </script>
+         
 	</body>
 </html>

@@ -24,8 +24,10 @@ main > section {
     top:0;
     position:sticky;
 }
+
 nav, h1, ul {
     margin:0;
+    z-index:10;
 }
 nav a {
     text-decoration:none;

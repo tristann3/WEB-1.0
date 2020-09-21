@@ -11,15 +11,55 @@
         const cart = []
 
         function addItem(name, price) {
-            const item = { name:name, price:price , qty:1 }
+            // looks for items in the cart with same name and adds qty instead of another new item
+            for(let i=0; i<cart.length; i++) {
+                if (cart[i].name === name) {
+                    cart[i].qty++;
+                    return;
+                }
+            }
+            // if there is not another item in the cart with the same name, it adds a new item
+            const item = { name, price , qty:1 }
             cart.push(item)
         }
 
         function showItems() {
-            console.log(`You have ${cart.length} items in your cart`)
+          // defines two variables the recieve the quantity and total returned from each function
+          let total = getTotal()
+          let qty = getQty()
+
+            console.log(`You have ${qty} items in your cart`)
+            //builds string to be logged with name, price, quantity of each different item
+            for (let i=0; i < cart.length; i++) {
+                console.log(`- ${cart[i].name} $${cart[i].price} x ${cart[i].qty}`);
+            }
+            console.log(`Total in cart: $${total.toFixed(2)}`)
+        }
+
+        function getQty() {
+          let qty = 0;
+          // loops through cart to get total number of items AND total price
+          for(let i=0; i<cart.length; i++) {
+                qty += cart[i].qty
+            }
+            return qty;
+        }
+
+        function getTotal() {
+          let total = 0
+          // loops through cart to get total price
+          for (let i=0; i<cart.length; i++) {
+                total += cart[i].price * cart[i].qty
+            }
+          return total
         }
 
         addItem('Apple', 0.99)
+        addItem('Apple', 0.99)
+        addItem('Orange', 0.99)
+        addItem('Apple', 0.99)
+
+
 
         showItems()
     </script>

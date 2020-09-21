@@ -1,3 +1,6 @@
+/* eslint-disable no-console */
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-plusplus */
 // eslint-disable-next-line import/extensions
 import data from './data.js';
 
@@ -32,3 +35,83 @@ data.forEach((item) => {
 
   itemsContainer.appendChild(newDiv); // puts newly created div inside the items container
 });
+
+const cart = [];
+
+// ----------------------------------------------------------------
+// Add Item
+function addItem(name, price) {
+  // looks for items in the cart with same name and adds qty instead of another new item
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].name === name) {
+      cart[i].qty++;
+      return;
+    }
+  }
+  // if there is not another item in the cart with the same name, it adds a new item
+  const item = { name, price, qty: 1 };
+  cart.push(item);
+}
+
+// ---------------------------------------------------------------
+// Show Items
+function showItems() {
+  // defines two variables the recieve the quantity and total returned from each function
+  const total = getTotal();
+  const qty = getQty();
+
+  console.log(`You have ${qty} items in your cart`);
+  // builds string to be logged with name, price, quantity of each different item
+  for (let i = 0; i < cart.length; i++) {
+    console.log(`- ${cart[i].name} $${cart[i].price} x ${cart[i].qty}`);
+  }
+  console.log(`Total in cart: $${total.toFixed(2)}`);
+}
+
+// -------------------------------------------------------------
+// Get Quantity
+function getQty() {
+  let qty = 0;
+  // loops through cart to get total number of items AND total price
+  for (let i = 0; i < cart.length; i++) {
+    qty += cart[i].qty;
+  }
+  return qty;
+}
+
+// ------------------------------------------------------------
+// Get Total
+function getTotal() {
+  let total = 0;
+  // loops through cart to get total price
+  for (let i = 0; i < cart.length; i++) {
+    total += cart[i].price * cart[i].qty;
+  }
+  return total;
+}
+
+// -------------------------------------------------------
+// Get Total
+function removeItem(name, qty = 0) {
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].name === name) {
+      if (qty > 0) {
+        cart[i].qty -= qty;
+      }
+      if (cart[i].qty < 1 || qty === 0) {
+        cart.splice(i, 1);
+      }
+      return;
+    }
+  }
+}
+
+// ---------------------------------------------------------
+addItem('Apple', 0.99);
+addItem('Apple', 0.99);
+addItem('Orange', 0.99);
+addItem('Apple', 0.99);
+removeItem('Apple', 1);
+removeItem('Orange');
+
+showItems();

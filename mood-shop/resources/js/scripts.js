@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 /* eslint-disable no-console */
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-plusplus */
@@ -5,6 +6,12 @@
 import data from './data.js';
 
 const itemsContainer = document.getElementById('items');
+const itemList = document.getElementById('item-list');
+const cartQty = document.getElementById('cart-qty');
+const cartTotal = document.getElementById('cart-total');
+
+
+itemList.innerHTML = '<li> Hello World</li>';
 
 data.forEach((item) => {
   const newDiv = document.createElement('div');
@@ -60,12 +67,21 @@ function showItems() {
   const total = getTotal();
   const qty = getQty();
 
-  console.log(`You have ${qty} items in your cart`);
+  cartQty.innerHTML = `You have ${qty} items in your cart`
+
+  let itemStr = '';
+
   // builds string to be logged with name, price, quantity of each different item
   for (let i = 0; i < cart.length; i++) {
-    console.log(`- ${cart[i].name} $${cart[i].price} x ${cart[i].qty}`);
+    const { name } = cart[i];
+    const { price } = cart[i];
+    const { qty } = cart[i];
+
+    itemStr += `${name} $${price} x ${qty} = $${total}`;
   }
-  console.log(`Total in cart: $${total.toFixed(2)}`);
+
+  itemList.innerHTML = itemStr;
+  cartTotal.innerHTML = `Total in cart: $${total.toFixed(2)}`;
 }
 
 // -------------------------------------------------------------

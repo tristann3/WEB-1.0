@@ -42,7 +42,12 @@ data.forEach((item) => {
 
   itemsContainer.appendChild(newDiv); // puts newly created div inside the items container
 });
+const all_items_button = Array.from(document.querySelectorAll('button'));
 
+all_items_button.forEach(elt => elt.addEventListener('click', () => {
+  addItem(elt.getAttribute('id'), elt.getAttribute('data-price'));
+  showItems();
+}));
 const cart = [];
 
 // ----------------------------------------------------------------

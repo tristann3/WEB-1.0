@@ -1,3 +1,6 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable camelcase */
+/* eslint-disable radix */
 /* eslint-disable no-shadow */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable no-console */
@@ -11,7 +14,7 @@ const itemList = document.getElementById('item-list');
 const cartQty = document.getElementById('cart-qty');
 const cartTotal = document.getElementById('cart-total');
 
-itemList.innerHTML = '<li> Hello World</li>';
+itemList.innerHTML = '<li></li>';
 
 data.forEach((item) => {
   const newDiv = document.createElement('div');
@@ -36,7 +39,7 @@ data.forEach((item) => {
   // creates buy button with a custom attribute data-price
   const button = document.createElement('button');
   button.id = item.name;
-  button.dataset.pice = item.price;
+  button.dataset.price = item.price;
   button.innerHTML = 'Add to Cart';
   newDiv.appendChild(button);
 
@@ -49,6 +52,33 @@ all_items_button.forEach(elt => elt.addEventListener('click', () => {
   showItems();
 }));
 const cart = [];
+// ---------------------------------------------------------------
+// handle clicks on list
+itemList.onclick = function (e) {
+  console.log(e.target);
+  if (e.target && e.target.classList.contains('remove')) {
+    const name = e.target.dataset.name; // data-name="????"
+    removeItem(name);
+  }
+  if (e.target && e.target.classList.contains('add')) {
+    const name = e.target.dataset.name; // data-name="????"
+    const price = e.target.dataset.price;
+    addItem(name, price);
+  }
+  if (e.target && e.target.classList.contains('subtract')) {
+    const name = e.target.dataset.name; // data-name="????"
+    removeItem(name, 1);
+  }
+};
+// ---------------------------------------------------------------
+// Handle change events on update input
+itemList.onchange = function (e) {
+  if (e.target && e.target.classList.contains('update')) {
+    const name = e.target.dataset.name;
+    const qty = parseInt(e.target.value);
+    updateCart(name, qty);
+  }
+};
 
 // ----------------------------------------------------------------
 // Add Item
@@ -57,6 +87,7 @@ function addItem(name, price) {
   for (let i = 0; i < cart.length; i++) {
     if (cart[i].name === name) {
       cart[i].qty++;
+      showItems();
       return;
     }
   }
@@ -82,7 +113,12 @@ function showItems() {
     const { price } = cart[i];
     const { qty } = cart[i];
 
-    itemStr += `${name} $${price} x ${qty} = $${total}`;
+    itemStr += `<li>${name} $${price} x ${qty} = $${price * qty} 
+    <button class="remove" data-name="${name}">Remove</button>
+    <button class="add" data-name=${name}>+</button>
+    <button class="subtract" data-name=${name}>-</button>
+    <input class="update" data-name=${name} type="number" min="0">
+    </li>`;
   }
 
   itemList.innerHTML = itemStr;
@@ -122,17 +158,33 @@ function removeItem(name, qty = 0) {
       if (cart[i].qty < 1 || qty === 0) {
         cart.splice(i, 1);
       }
+      showItems();
+      return;
+    }
+  }
+}
+// --------------------------------------------------------
+// Update Cart
+function updateCart(name, qty) {
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].name === name) {
+      cart[i].qty = qty;
+      if (cart[i].qty < 1) {
+        removeItem(cart[i].name);
+        return;
+      }
+      showItems();
       return;
     }
   }
 }
 
 // ---------------------------------------------------------
-addItem('Apple', 0.99);
-addItem('Apple', 0.99);
-addItem('Orange', 0.99);
-addItem('Apple', 0.99);
-removeItem('Apple', 1);
-removeItem('Orange');
+// addItem('Apple', 0.99);
+// addItem('Apple', 0.99);
+// addItem('Orange', 0.99);
+// addItem('Apple', 0.99);
+// removeItem('Apple', 1);
+// removeItem('Orange');
 
-showItems();
+// showItems();

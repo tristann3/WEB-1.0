@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable no-console */
 /* eslint-disable no-use-before-define */
@@ -9,7 +10,6 @@ const itemsContainer = document.getElementById('items');
 const itemList = document.getElementById('item-list');
 const cartQty = document.getElementById('cart-qty');
 const cartTotal = document.getElementById('cart-total');
-
 
 itemList.innerHTML = '<li> Hello World</li>';
 
@@ -67,7 +67,7 @@ function showItems() {
   const total = getTotal();
   const qty = getQty();
 
-  cartQty.innerHTML = `You have ${qty} items in your cart`
+  cartQty.innerHTML = `You have ${qty} items in your cart`;
 
   let itemStr = '';
 

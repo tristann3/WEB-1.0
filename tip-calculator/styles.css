@@ -1,0 +1,32 @@
+body {
+    background-color:rgb(56, 243, 227);
+    margin: 0 300px;
+}
+h1 {
+    display:flex;
+    justify-content:center;
+}
+#tip-container {
+    display:flex;
+    background-color:white;
+    border: groove 2px;
+    border-radius:15px; 
+    height:300px;
+}
+#left-side {
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+#right-side {
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+p {
+    margin:0;
+}

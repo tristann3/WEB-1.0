@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="styles.css">
     
     <title>Tip Calculator</title>
 </head>
 <body>
     <main>
         <h1>Tip Calculator</h1>
-        <input id="input-bill" value="100.00" type="number">
-        <input id="input-tip" value="15" type="number">
-        <input id="input-people" value="1" type="number" min=0 max=100>
-        <div>Tip: <p id="display-tip">0.00</p><p>per person</p></div>
-        <div>Total: <p id="display-total">0.00</p><p>per person</p></div>
+        <div id="tip-container">
+            <div id="left-side">
+                <p>Bill:</p>
+                <input id="input-bill" value="100.00" type="number">
+                <p>Tip:</p>
+                <input id="input-tip" value="15" type="number">
+                <p>Number of people</p>
+                <input id="input-people" value="1" type="number" min=0 max=100>
+            </div>
+            <div id="right-side">
+                <div>Tip: <p id="display-tip">0.00</p><p>per person</p></div>
+                <div>Total: <p id="display-total">0.00</p><p>per person</p></div>
+            </div>
+        </div>
       </main>
     <script src="script.js"></script>
 </body>

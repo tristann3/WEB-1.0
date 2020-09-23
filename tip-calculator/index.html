@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Tip Calculator</title>
 </head>
 <body>
     <main>
-        <h1>Tip Calc</h1>
-        <div id="display">0.00</div>
-        <input id="bill" value="10.00" type="number">
-        <input id="tip" value="15" type="number">
+        <h1>Tip Calculator</h1>
+        <input id="input-bill" value="100.00" type="number">
+        <input id="input-tip" value="15" type="number">
+        <input id="input-people" value="1" type="number" min=0 max=100>
+        <div>Tip: <p id="display-tip">0.00</p><p>per person</p></div>
+        <div>Total: <p id="display-total">0.00</p><p>per person</p></div>
       </main>
+    <script src="script.js"></script>
 </body>
 </html>

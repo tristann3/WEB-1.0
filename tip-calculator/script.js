@@ -10,7 +10,7 @@ function calculateTip() {
   const tipValue = parseFloat(tipInput.value);
   const peopleValue = parseFloat(peopleInput.value);
 
-  const tipAmount = billValue * tipValue / 100 / peopleValue;
+  const tipAmount = ((billValue * tipValue) / 100) / peopleValue;
   const total = (billValue + tipAmount) / peopleValue;
 
   displayTip.innerHTML = tipAmount.toFixed(2);

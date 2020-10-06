@@ -1,0 +1,20 @@
+main {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding: 50px 100px;
+}
+section{
+    padding:30px
+}
+#data-input{
+    display:flex;
+    flex-direction:column;
+}
+#data-input{
+    border:3px solid black;
+}
+#headline-display{
+    border:3px solid black;
+    text-align:center;
+}

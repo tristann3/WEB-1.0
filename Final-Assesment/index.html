@@ -3,44 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="styles.css">
+
     <title>Tristan Thompson - Final - Web 1.0</title>
 </head>
 <body>
-    <section id="student-info">
-        <h1>Tristan Thompson</h1>
-        <p>My favorite color is blue and I wear Converse</p>
-    </section>
-    <section id="data-input">
-        <h1>Font Styler</h1>
-        <label for="input-size">Font Size</label>
-        <input id="input-size" value="0" type="number">
-        <label for="input-font">Font Family
-            <select name="input-font" id="input-font">
-                <option value="Helvetica">Helvetica</option>
-                <option value="Arial">Arial</option>
-                <option value="Times New Roman">Times New Roman</option>
-                <option value="Georgia">Georgia</option>
+    <main>
+        <div id="left-container">
+            <section id="student-info">
+                <h1>Tristan Thompson</h1>
+                <p>My favorite color is blue and I wear Converse</p>
+            </section>
+            <section id="data-input">
+                <h1>Font Styler</h1>
+                <label for="input-size">Font Size</label>
+                <input id="input-size" value="0" type="number">
+                <label for="input-font">Font Family
+                    <select name="input-font" id="input-font">
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Georgia">Georgia</option>
 
-            </select>
-        </label>
-        <label for="input-color">Font Color</label>
-        <input id="input-color" type="color" value="#fff">
-        <label for="input-bg-color">Background Color</label>
-        <input id="input-bg-color" type="color" value="#fff">
-        <label for="enter-text">Enter Text</label>
-        <textarea id="enter-text"></textarea>
-    </section>
-    <section id="headline-display">
-        <h1 id="display"></h1>
-    </section>
-    <section id="data-output">
-        <pre><code>.headline {
-            font-size: <span id="show-size">16</span>px;
-            font-family: <span id="show-font">Times</span>;
-            color: <span id="show-color">#000</span>;
-            background-color: <span id="show-bg-color">#fff</span>;
-        }</code></pre>
-    </section>
-    
+                    </select>
+                </label>
+                <label for="input-color">Font Color</label>
+                <input id="input-color" type="color">
+                <label for="input-bg-color">Background Color</label>
+                <input id="input-bg-color" type="color">
+                <label for="enter-text">Enter Text</label>
+                <textarea id="enter-text"></textarea>
+            </section>
+        </div>
+        <div id="right-container">
+            <section id="headline-display">
+                <h1 id="display">Headline Display</h1>
+            </section>
+            <section id="data-output">
+                <pre><code>.headline {
+                    font-size: <span id="show-size">16px</span>;
+                    font-family: <span id="show-font">Times</span>;
+                    color: <span id="show-color">#000</span>;
+                    background-color: <span id="show-bg-color">#fff</span>;
+                }</code></pre>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
